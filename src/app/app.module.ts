@@ -1,20 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-
+import{NpowerDialogComponent} from './components/npower-dialog/npower-dialog.component';
+import { ColumnComponent } from './components/column/column.component';
+import {MatDialogModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ColumnComponent,
+    NpowerDialogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [NpowerDialogComponent]
 })
 export class AppModule { }

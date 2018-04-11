@@ -1,0 +1,27 @@
+
+.greybg2 {
+    background-color: #AAB7B8;
+    padding: 10px;
+    color: #000000;
+    text-align: left;
+    font-size: 10px;
+    min-height: 200px;
+}
+.button {
+    background-color: #21618C;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+

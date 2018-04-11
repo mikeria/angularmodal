@@ -1,0 +1,48 @@
+
+
+* {
+    box-sizing: border-box;
+}
+.row {
+    column-gap: 5px;
+    padding: 0px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.greybg1 {
+    background-color: #EAEDED;
+    padding: 0px;
+    color: #ffffff;
+    text-align: left;
+    font-size: 10px;
+    height: 100px;
+}
+
+
+
+/* For desktop: */
+.col-side {width: 5%;}
+.col-main {width: 30%;}
+.col-pic {width: 30%; height: 100px;}
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .col-pic {
+    display: none;
+    }
+}
